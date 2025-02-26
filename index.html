@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="assets/logo2.jpg">
+    <script src="https://kit.fontawesome.com/1e2092fc85.js" crossorigin="anonymous"></script>
+    <title>Store Management</title>
+</head>
+<body>
+
+    <nav>
+        <img src="assets/logo2.jpg" alt="LOGO">
+    </nav>
+
+    <div class="container">
+        <div class="buttons">
+            <button id="add_items">Add Items</button>
+            <button id="add_categories">Add Categories</button>
+            <button id="delete_items">Delete All Items</button>
+            <button id="delete_categories">Delete All Categories</button>
+        </div>
+        <hr>
+        <div class="method">
+            <div>
+                <input type="radio" name="chooseMethod" id="textSearch">
+                <label for="textSearch">Search By Text</label>
+            </div>
+            <div>
+                <input type="radio" id="catgrSearch" name="chooseMethod">
+                <label for="catgrSearch">Search By Categorie</label>
+            </div>
+        </div>
+        <div class="search">
+            <input type="text" id="search_input" placeholder="Search...">
+            <button id="search_btn"><i class="fa-solid fa-magnifying-glass"></i></button>
+        </div>
+        <p id="allElementsText"></p>
+        <div class="content">
+            
+            
+        </div>
+        <p id="noPro">No porducts yet</p>
+        
+    </div>
+
+    <div class="backToTop">
+        <i class="fa-solid fa-angle-up"></i>
+    </div>
+
+    <div class="addItems">
+        <div class="inputs">
+            <p id="hidebtn">&#10005;</p>
+            <input type="text" placeholder="Name..." class="info"  id="product_name" required>
+            <input type="number" min="0" placeholder="Price..." class="info"  id="product_price" required>
+            <select name="" id="">
+                
+            </select>
+            <div class="addImage">
+                <label for="product_input_image">Add <br> Image</label>
+                <input type="file" id="product_input_image">
+            </div>
+            <button type="submit" id="submit">Submit</button>
+        </div>
+    </div>
+    
+
+    <div class="addCategories">
+        <p id="hidebtn2">&#10005;</p>
+        <input type="text" placeholder="Categorie Name..." id="Categorie_Name"><br>
+        <button type="submit" id="submitCatg">Submit</button>
+    </div>
+
+    <div class="deleteItems">
+        <p>Are You sure you want to delete all items?</p>
+        <button id="delete_item">Delete</button>
+        <button id="cancel_item">cancel</button>
+    </div>
+
+    <div class="deleteCategories">
+        <p>Are You sure you want to delete all Categories?</p>
+        <button id="deleteCatg">Delete</button>
+        <button id="cancelCatg">cancel</button>
+    </div>
+
+    
+
+
+    <script src="main.js"></script>
+</body>
+</html>
